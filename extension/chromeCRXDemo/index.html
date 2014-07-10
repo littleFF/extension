@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bonjour index</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+    <script src="dist/libs/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+      <script src="index.js"></script>
+
+    <div class="row" >
+      <div class="col-lg-6">
+        <div class="btn-toolbar  affix"  role="toolbar" style="width:700px;z-index: 2;">
+          <div class="btn-group btn-group-justified">
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-search"></span>FindIT <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#" onClick="BrowseBonjour.refresh();">Refresh</a></li>
+            </ul>
+          </div><!-- /btn-group -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-floppy-disk"></span>Applocations <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#" data-toggle="modal" data-target="#myModal">Cisco Video Monitoring System</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#myModal">Cisco Continuous Data Protaction</a></li>
+            </ul>
+          </div><!-- /btn-group -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-wrench"></span>Setting <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#" data-toggle="modal" data-target="#myModal">Toolbar</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#myModal">Product Improvement</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#myModal">Show Text on Buttons</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#myModal">Software Update</a></li>
+            </ul>
+          </div><!-- /btn-group -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-envelope"></span>Support <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#" data-toggle="modal" data-target="#myModal">Findit Help</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#myModal">Small Business Support Center Contacts</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#myModal">Small Business Support Community</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#myModal">Small Business Online Chat Support</a></li>
+              <li class="divider"></li>
+              <li><a href="#" data-toggle="modal" data-target="#myModal">Provide Feedback on FindIT</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#myModal">About Cisco FindIT</a></li>
+            </ul>
+          </div><!-- /btn-group -->
+        </div>
+        </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+     
+    </div><!-- /.row -->
+
+
+<div class="row" style=" padding-top:50px;height:100%;">
+  <div class="col-md-3" style="height:100%;">
+    <div class="panel">
+        <div class="clearfix content-heading">
+          <h3><img src="cisco_logo_header.png" ><label style="color:white;">FindIT</label></h3>
+        </div>
+      <div class="well sidebar-nav"  style="overflow-x:hidden;overflow-y:scroll;position:relative;height:80%;width:90%;margin-left:15px;background-color:#A2B9C9;">
+          <div >
+              <ul class="nav nav-list">
+                  <li id="root"><label class="tree-toggle nav-header">FindIT</label>
+                      
+                  </li>
+                  
+              </ul>
+          </div>
+      </div>
+      <div class="clearfix content-footer">
+          <p><label style="color:white;margin-left:20px">  @2014 CISCO Inc.</label></p>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-9" role="main" style="height:100%;">
+    <iframe id="mainIframe" name="mainIframe" src="http://www.cisco.com" frameborder="0" scrolling="auto" width="90%" height="90%"></iframe>
+  </div>
+    
+</div>
+
+<!-- Context Menu -->
+<div id="contextMenu" class="dropdown clearfix">
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display:block;position:static;margin-bottom:5px;">
+      <li><a tabindex="-1" href="#" onClick="BrowseBonjour.deviceClick();">Open</a></li>
+      <li><a tabindex="-1" href="#" onClick="BrowseBonjour.deviceClick();">Open in a New Window</a></li>
+      <li><a tabindex="-1" href="#" onClick="BrowseBonjour.deviceClick();">Open in a New Tab</a></li>
+      <li class="divider"></li>
+      <li class="disabled"><a tabindex="-1" href="#">Download latest firmware</a></li>
+      <li class="disabled"><a tabindex="-1" href="#">Download latest firmware to ...</a></li>
+    </ul>
+  </div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title" id="myModalLabel">Toolbar Settings</h4>
+        </div>
+        <div class="modal-body">
+          <h4>Customize the toolbar button</h4>
+          <p>Use this page to manage the toolbar buttons</p>
+          <div class="panel panel-default">
+  <!-- Default panel contents -->
+            <div class="panel-heading">Toolbar Buttons</div>
+            <table class="table table-striped">
+            <thead>
+              
+              <tr>
+                <th>  </th>
+                <th>Show</th>
+                <th>Icon</th>
+                <th>Title</th>
+                <th>Web Address(URL)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><input type="checkbox"></td>
+                <td><span class="glyphicon glyphicon-th-large"></td>
+                <td>Application</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><input type="checkbox"></td>
+                <td><span class="glyphicon glyphicon-wrench"></td>
+                <td>Settings</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+              </tr>
+              
+            </tbody>
+
+          </table>
+          <div class="btn-group-right" align="right">
+              <a href="#" role="button" class="btn btn-default" ><span class="glyphicon glyphicon-plus">Add</a>
+              <a href="#" role="button" class="btn btn-default" ><span class="glyphicon glyphicon-pencil">Edit</a>
+              <a href="#" role="button" class="btn btn-default" ><span class="glyphicon glyphicon-minus">Delete</a>
+          </div>
+          </div>
+          <div class="well well-sm">
+            <p><i>NOTE: The default buttons cannot be edited or deleted</i></p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+  </body>
+
+</html>
