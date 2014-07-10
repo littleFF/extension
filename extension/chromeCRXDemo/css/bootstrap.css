@@ -5209,16 +5209,14 @@ button.close {
   opacity: .9;
 }
 .tooltip.top {
-  padding: 5px 0;
-  margin-top: -3px;
+
 }
 .tooltip.right {
   padding: 0 5px;
   margin-left: 3px;
 }
 .tooltip.bottom {
-  padding: 5px 0;
-  margin-top: 3px;
+
 }
 .tooltip.left {
   padding: 0 5px;
@@ -5227,10 +5225,10 @@ button.close {
 .tooltip-inner {
   max-width: 200px;
   padding: 3px 8px;
-  color: #fff;
+  color: #000;
   text-align: left;
   text-decoration: none;
-  background-color: #000;
+  background-color: #fff;
   border-radius: 4px;
   white-space:pre-wrap;
 }
@@ -5246,33 +5244,33 @@ button.close {
   left: 50%;
   margin-left: -5px;
   border-width: 5px 5px 0;
-  border-top-color: #000;
+  border-top-color: #fff;
 }
 .tooltip.top-left .tooltip-arrow {
   bottom: 0;
   left: 5px;
   border-width: 5px 5px 0;
-  border-top-color: #000;
+  border-top-color: #fff;
 }
 .tooltip.top-right .tooltip-arrow {
   right: 5px;
   bottom: 0;
   border-width: 5px 5px 0;
-  border-top-color: #000;
+  border-top-color: #fff;
 }
 .tooltip.right .tooltip-arrow {
   top: 50%;
   left: 0;
   margin-top: -5px;
   border-width: 5px 5px 5px 0;
-  border-right-color: #000;
+  border-right-color: #fff;
 }
 .tooltip.left .tooltip-arrow {
   top: 50%;
   right: 0;
   margin-top: -5px;
   border-width: 5px 0 5px 5px;
-  border-left-color: #000;
+  border-left-color: #fff;
 }
 .tooltip.bottom .tooltip-arrow {
   top: 0;
@@ -5784,24 +5782,5 @@ button.close {
   }
 }
 
-body,
-html,
-.row .col-md-10,
-.row .col-md-3 .panel {
-   height:100%;
-}
 
-.tooltip{
-  z-index:10000;
-  position: fixed;
-}
-
-#contextMenu {
-  position: absolute;
-  display:none;
-}
-.col-md-3 .panel{
-  background: url(../pageBackground.jpg);
-  background-size: cover;
-}
 /*# sourceMappingURL=bootstrap.css.map */

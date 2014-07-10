@@ -1,0 +1,118 @@
+body,
+html,
+.row .col-md-10,
+.row .col-sm-9,
+.row #sidebarContent {
+   height:100%;
+   overflow:hidden;
+}
+#sidebarPanel{
+  height:100%;
+  overflow:hidden;
+  padding-bottom:50px;
+}
+.tooltip{
+  z-index:10000;
+  position: fixed;
+}
+
+#contextMenu {
+  position: absolute;
+  display:none;
+}
+#sidebarContent .panel{
+  background: url(../images/pageBackground.jpg);
+  background-size: cover;
+}
+
+.col-lg-6 div.btn-toolbar.affix {
+        width:700px;
+        z-index: 2; 
+      }
+      div.btn-toolbar.affix button.btn.btn-default{
+        border:0px;
+      }
+      #bodyContent{
+        padding-top:50px;
+        height:100%;
+      }
+      #sidebarContent{
+        height:100%;
+        padding-bottom:50px;
+        max-width:400px;
+        width: 300px;
+        position:absolute;
+        overflow:hidden;
+
+      }
+      #siderbarHeader{
+        margin:0 auto;
+        height:75px;
+      }
+      #sidebar{
+        overflow-x:hidden;
+        overflow-y:scroll;
+        width:90%;
+        height:90%;
+        margin-left:15px;
+        background-color:#A2B9C9;
+        padding-bottom:50px;
+      }
+      #LogoText{
+        color:white;
+      }
+      #sidebarFooter{
+        position: relative;
+        margin-top: -30px; /* negative value of footer height */
+        height: 50px;
+        clear:both;
+        padding-top:20px;
+        color:#fff;
+      }
+      #sidebarFooter p label{
+        color:white;
+        margin-left:20px;
+        height:30px;
+      }
+      #iframeContent{
+        height:100%;
+        float:right;
+      }
+      div#contextMenu .dropdown-menu{
+        display:block;
+        position:static;
+        margin-bottom:5px;
+      }
+      .nav li a{
+        padding: 0;
+        padding-left: 15px;
+      }
+      .tooltip-inner{
+        padding: 10px;
+        border:5px solid black;
+      }
+      .tooltip.right .tooltip-arrow {
+        top: 50%;
+        left: 0;
+        margin-top: -5px;
+        border-width: 5px 5px 5px 0;
+        border-right-color: black;
+      }
+      .tooltip.top .tooltip-arrow {
+        
+        left: 0;
+        margin: 0px;
+        padding: 0;
+        border-width: 5px 5px 0;
+        border-top-color: black;
+      }
+      .tooltip.bottom .tooltip-arrow {
+        left: 0;
+        margin: 0px;
+        padding: 0;
+        border-width: 5px 5px 0;
+        border-top-color: black;
+      }
+      .tooltip-arrow {
+        border-width: 0;
+      }
